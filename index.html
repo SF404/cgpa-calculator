@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
+    <title>CGPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <h2>CGPA Calculator</h2>
+        </div>
+        <div class="subject" id="subject1">
+            <input type="text" placeholder="--subject-name--" class="sub_name">
+            <input type="text" placeholder="--credit--" id="sub-1" maxlength="1" class="sub_credit">
+            <select name="grades" id="grade1" class="sub_grade">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B+</option>
+                <option value="7">B</option>
+                <option value="6">C+</option>
+                <option value="5">C</option>
+                <option value="4">D</option>
+            </select>
+        </div>
+
+        <div class="subject" id="subject2">
+            <input type="text" placeholder="--subject-name--" class="sub_name">
+            <input type="text" placeholder="--credit--" id="sub-2" maxlength="1" class="sub_credit">
+            <select name="grades" id="grade2" class="sub_grade">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B+</option>
+                <option value="7">B</option>
+                <option value="6">C+</option>
+                <option value="5">C</option>
+                <option value="4">D</option>
+            </select>
+        </div>
+        <div class="subject" id="subject3">
+            <input type="text" placeholder="--subject-name--" class="sub_name">
+            <input type="text" placeholder="--credit--" id="sub-3" maxlength="1" class="sub_credit">
+            <select name="grades" id="grade3" class="sub_grade">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B+</option>
+                <option value="7">B</option>
+                <option value="6">C+</option>
+                <option value="5">C</option>
+                <option value="4">D</option>
+            </select>
+        </div>
+        <div class="subject" id="subject4">
+            <input type="text" placeholder="--subject-name--" class="sub_name">
+            <input type="text" placeholder="--credit--" id="sub-4" maxlength="1" class="sub_credit">
+            <select name="grades" id="grade4" class="sub_grade">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B+</option>
+                <option value="7">B</option>
+                <option value="6">C+</option>
+                <option value="5">C</option>
+                <option value="4">D</option>
+            </select>
+        </div>
+        <div class="subject" id="subject5">
+            <input type="text" placeholder="--subject-name--" class="sub_name">
+            <input type="text" placeholder="--credit--" id="sub-5" maxlength="1" class="sub_credit">
+            <select name="grades" id="grade5" class="sub_grade">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B+</option>
+                <option value="7">B</option>
+                <option value="6">C+</option>
+                <option value="5">C</option>
+                <option value="4">D</option>
+            </select>
+        </div>
+        <div class="subject" id="subject6">
+            <input type="text" placeholder="--subject-name--" class="sub_name">
+            <input type="text" placeholder="--credit--" id="sub-6" maxlength="1" class="sub_credit">
+            <select name="grades" id="grade6" class="sub_grade">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B+</option>
+                <option value="7">B</option>
+                <option value="6">C+</option>
+                <option value="5">C</option>
+                <option value="4">D</option>
+            </select>
+        </div>
+        <div class="subject" id="subject7">
+            <input type="text" placeholder="--subject-name--" class="sub_name">
+            <input type="text" placeholder="--credit--" id="sub-7" maxlength="1" class="sub_credit">
+            <select name="grades" id="grade7" class="sub_grade">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B+</option>
+                <option value="7">B</option>
+                <option value="6">C+</option>
+                <option value="5">C</option>
+                <option value="4">D</option>
+            </select>
+        </div>
+        <div class="subject" id="subject8">
+            <input type="text" placeholder="--subject-name--" class="sub_name">
+            <input type="text" placeholder="--credit--" id="sub-8" maxlength="1" class="sub_credit">
+            <select name="grades" id="grade8" class="sub_grade">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B+</option>
+                <option value="7">B</option>
+                <option value="6">C+</option>
+                <option value="5">C</option>
+                <option value="4">D</option>
+            </select>
+        </div>
+        <div class="subject" id="subject9">
+            <input type="text" placeholder="--subject-name--" class="sub_name">
+            <input type="text" placeholder="--credit--" id="sub-9" maxlength="1" class="sub_credit">
+            <select name="grades" id="grade9" class="sub_grade">
+                <option value="10">A+</option>
+                <option value="9">A</option>
+                <option value="8">B+</option>
+                <option value="7">B</option>
+                <option value="6">C+</option>
+                <option value="5">C</option>
+                <option value="4">D</option>
+            </select>
+        </div>
+        <div class="result_show"><button onclick="calculate()">Calculate</button></div>
+        <div class="result_display">
+            <div>CGPA: <span id="CGPA"></span></div>
+            <div>Total Credits: <span id="total_credits"></span></div>
+            <!-- <div class="result">Result: <p></p></div> -->
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
