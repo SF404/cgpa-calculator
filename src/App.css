@@ -1,0 +1,130 @@
+body {
+  background: whitesmoke;
+  transition: all 0.3s ease-in-out;
+}
+
+.header {
+  background-color: rosybrown;
+  background-color: #9babd0;
+  padding: 0.5em;
+  text-align: center;
+  color: White;
+  font-size: 2em;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  background: linear-gradient(to right,#01a9c0, #01bca9);
+
+}
+
+
+#form {
+  margin: 1em auto;
+  max-width: 45em;
+  text-align: center;
+  padding: 1em;
+  padding-top: 4em;
+  position: relative;
+  /* border: 1px solid brown; */
+  background-color: white;
+  box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5em;
+}
+
+#field>* {
+  font-size: 1.4em;
+  text-align: center;
+  padding: 0.5em;
+  margin: 0.5em;
+  border: none;
+  background-color: #e5eef5;
+  border-radius: 0.25em;
+  box-shadow:0px 1px 4px  rgba(0, 0, 0, 0.2);
+  color: rgb(48, 48, 48);
+
+}
+#field>*:focus{
+  outline:1px solid blue;
+}
+
+#bar{
+  height: 3em;
+  background: linear-gradient(to right,#01a9c0, #01bca9);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-radius: 0.5em 0.5em 0 0;
+}
+#selectGrade {
+  text-align: left;
+}
+
+#creditInput {
+  width: 5em;
+}
+
+#buttons>input {
+  width: 10em;
+  font-size: 1em;
+  padding: 1em;
+  margin: 1em;
+  border: none;
+  outline: none;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 0.35em;
+  color: white;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 1px;
+  transition: all 0.2s ease-in;
+}
+
+#buttons>input:nth-child(1){
+  background-color: #01a9c0;
+}
+#buttons>input:nth-child(2){
+  background-color: #67dfd5;
+}
+#buttons>input:hover{
+  box-shadow: 0px 1px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+#output {
+  display: block;
+  max-width: 45em;
+  margin: 1.5em auto;
+  padding: 1em;
+  background-color: white;
+  box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5em;
+}
+
+#output>p {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+@media only screen and (max-width: 760px) {
+  body{
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body{
+    font-size: 8px;
+  }
+  #field>*{
+    font-size: 16px;
+  }
+  #buttons>input{
+    font-size: 12px;
+  }
+  #output>p{
+    font-size: 14px;
+  }
+  #subjectName{
+    width: 8em;
+  }
+}
